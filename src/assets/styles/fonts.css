@@ -1,0 +1,16 @@
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    src: url('#{$file-path}.woff2') format("woff2"),
+      url('#{$file-path}.woff') format("woff");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include font-face("krub", "../fonts/krub-extralight", 200);
+@include font-face("krub", "../fonts/krub-light", 300);
+@include font-face("krub", "../fonts/krub-regular", 400);
+@include font-face("krub", "../fonts/krub-medium", 500);
+@include font-face("krub", "../fonts/krub-semibold", 600);
+@include font-face("krub", "../fonts/krub-bold", 700);

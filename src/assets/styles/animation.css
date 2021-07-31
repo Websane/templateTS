@@ -1,0 +1,33 @@
+.fadeIn {
+  animation: fade 7s linear forwards;
+}
+
+.fadeOut {
+  animation: fade 7s linear reverse forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dasharrayIn {
+  animation: dasharray 10s linear alternate forwards;
+}
+
+@keyframes dasharray {
+  0% {
+    stroke-dasharray: 0 150;
+  }
+
+  100% {
+    stroke-dasharray: 150 0;
+  }
+}
